@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>产品筛选页</title>
+    <link href="style/reset.css" type="text/css" rel="stylesheet">
+    <link href="style/style.css" type="text/css" rel="stylesheet">
+    <!--[if IE 6]>
+    <script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script type="text/javascript" src="js/ie6Fixpng.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<header>
+    <div class="top">
+        <div class="topBar">
+            <div class="comWidth">
+                <div class="leftArea">
+                    <a class="collection" href="#">收藏慕课</a>
+                </div>
+                <div class="rightArea">
+                    欢迎来到慕课网！<a href="login.html" target="_blank">[登录]</a><a href="regi.html" target="_blank">[免费注册]</a>
+                </div>
+            </div>
+        </div>
+        <div class="search">
+            <div class="comWidth">
+                <div class="logo fl">
+                    <img src="images/logo.png" alt="慕课网">
+                </div>
+                <div class="searchMid fl">
+                    <form>
+                        <input type="text" class="searchText fl">
+                        <input type="button" class="searchButton fr" value="搜索">
+                    </form>
+                </div>
+                <div class="searchRight fr">
+                    <div class="shopCar">
+                        <span class="shopText fl">购物车</span>
+                        <span class="shopNum fr">0</span>
+                    </div>
+                </div>
+            </div>
+        </div><div class=" navbar">
+        <div class="nav comWidth">
+            <div class="shopClass fl">
+                <a href="javascript:;"><h3>全部商品分类<i></i></h3>
+                </a>
+                <div class="shopClassShow">
+                    <dl class="shopClassShowItem">
+                        <dt><a class="shopClassShowHead" href="#">手机</a><a class="shopClassShowHead" href="#">数码</a><a
+                                class="fHeader" href="#">合约机</a><i></i></dt>
+                        <dd><a href="">荣耀3X </a><a href=""> 单反</a><a href="">智能设备</a></dd>
+                    </dl>
+                    <dl class="shopClassShowItem shopClassShowItemHover ">
+                        <dt><a class="shopClassShowHead" href="#">电脑</a><a class="shopClassShowHead" href="#">
+                            硬件外设</a><a class="fHeader" href="#">装机宝</a><i></i></dt>
+                        <dd><a href="">笔记本 </a><a href=""> 台式机</a><a href="">超极本</a><a href=""> 平板</a></dd>
+                    </dl>
+                    <dl class="shopClassShowItem">
+                        <dt><a class="shopClassShowHead" href="#">大家电</a><i></i></dt>
+                        <dd><a href="">电视 </a><a href=""> 空调 </a><a href="">冰箱 </a><a href="">洗衣机 </a></dd>
+                    </dl>
+                    <dl class="shopClassShowItem">
+                        <dt><a class="shopClassShowHead" href="#">厨房电器 </a><a class="shopClassShowHead"
+                                                                              href="#">生活电器</a><i></i></dt>
+                        <dd><a href="">空气净化器 </a><a href=""> 微波炉</a><a href="">取暖设备</a></dd>
+                    </dl>
+                    <dl class="shopClassShowItem">
+                        <dt><a class="shopClassShowHead" href="#">食品/饮料/生鲜</a><a class="fHeader" href="#">粮油</a><i></i>
+                        </dt>
+                        <dd><a href="">进口 </a><a href=""> 方便面 </a><a href="">零食</a><a href="">保健</a></dd>
+                    </dl>
+                </div>
+
+                <!-- 弹出框-->
+                <div class="showMenu">
+                    <div class="showMenuLine line1">
+                        <div class="showMenuLineHeader">电脑整机</div>
+                        <div class="showMenuLinelist">
+                            <ul>
+                                <li><a href="classification.html">笔记本</a></li>
+                                <li><a href="classification.html">超极本</a></li>
+                                <li><a href="classification.html">上网本</a></li>
+                                <li><a href="classification.html">平板电脑</a></li>
+                                <li><a href="classification.html">台式机</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="showMenuLine line2">
+                        <div class="showMenuLineHeader">装机配件</div>
+                        <div class="showMenuLinelist">
+                            <ul>
+                                <li><a href="classification.html">CPU</a></li>
+                                <li><a href="classification.html">硬盘</a></li>
+                                <li><a href="classification.html">SSD固态硬盘</a></li>
+                                <li><a href="classification.html">内存</a></li>
+                                <li><a href="classification.html">显示器</a></li>
+                                <li><a href="classification.html">智能显示器</a></li>
+                                <li><a href="classification.html">硬盘</a></li>
+                                <li><a href="classification.html">SSD固态硬盘</a></li>
+                                <li><a href="classification.html">主板</a></li>
+                                <li><a href="classification.html">显卡</a></li>
+                                <li><a href="classification.html">机箱</a></li>
+                                <li><a href="classification.html">电源</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="showMenuLine line2">
+                        <div class="showMenuLineHeader">整机附件</div>
+                        <div class="showMenuLinelist">
+                            <ul>
+                                <li><a href="classification.html">电脑包</a></li>
+                                <li><a href="classification.html">电脑桌</a></li>
+                                <li><a href="classification.html">电池</a></li>
+                                <li><a href="classification.html">电源适配器</a></li>
+                                <li><a href="classification.html">贴膜</a></li>
+                                <li><a href="classification.html">清洁用品</a></li>
+                                <li><a href="classification.html">笔记本散热器</a></li>
+                                <li><a href="classification.html">USB拓展</a></li>
+                                <li><a href="classification.html">平板配件</a></li>
+                                <li><a href="classification.html">特色附件</a></li>
+                                <li><a href="classification.html">插座网线/电话线</a></li>
+                                <li><a href="classification.html">影音线材</a></li>
+                                <li><a href="classification.html">电脑线材</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="showMenuLine line2">
+                        <div class="showMenuLineHeader">电脑外设</div>
+                        <div class="showMenuLinelist">
+                            <ul>
+                                <li><a href="classification.html">鼠标</a></li>
+                                <li><a href="classification.html">键盘</a></li>
+                                <li><a href="classification.html">游戏外设</a></li>
+                                <li><a href="classification.html">移动硬盘</a></li>
+                                <li><a href="classification.html">摄像头</a></li>
+                                <li><a href="classification.html">高清播放器</a></li>
+                                <li><a href="classification.html">外置盒</a></li>
+                                <li><a href="classification.html">移动硬盘包</a></li>
+                                <li><a href="classification.html">手写板/绘图板</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="showMenuLine line1">
+                        <div class="showMenuLineHeader">网络设备</div>
+                        <div class="showMenuLinelist">
+                            <ul>
+                                <li><a href="classification.html">路由器</a></li>
+                                <li><a href="classification.html">网卡</a></li>
+                                <li><a href="classification.html">3G无线上网</a></li>
+                                <li><a href="classification.html">交换机</a></li>
+                                <li><a href="classification.html">网络存储</a></li>
+                                <li><a href="classification.html">布线工具</a></li>
+                                <li><a href="classification.html">网络配件</a></li>
+                                <li><a href="classification.html">正版软件</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="showMenuLine line1">
+                        <div class="showMenuLineHeader">音频设备</div>
+                        <div class="showMenuLinelist">
+                            <ul>
+                                <li><a href="classification.html">音箱</a></li>
+                                <li><a href="classification.html">耳机/耳麦</a></li>
+                                <li><a href="classification.html">麦克风</a></li>
+                                <li><a href="classification.html">声卡</a></li>
+                                <li><a href="classification.html">音频附件</a></li>
+                                <li><a href="classification.html">录音笔</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" channel">
+                        <div><a href="classification.html">电脑整机频道</a></div>
+                        <div><a href="classification.html">硬件/外设频道</a></div>
+                    </div>
+                </div>
+
+            </div>
+            <ul class="navList fl">
+                <li class="active"><a  href="javascript:;">数码城</a></li>
+                <li><a href="javascript:;">天黑黑</a></li>
+                <li><a href="javascript:;">团购</a></li>
+                <li><a href="javascript:;">发现</a></li>
+                <li><a href="javascript:;">二手特卖</a></li>
+                <li><a href="javascript:;">名品会</a></li>
+            </ul>
+        </div>
+    </div></div>
+</header>
+<div class="hr_15"></div>
+<div class="comWidth clearfix">
+        <div class="leftMenu">
+            <div class="leftMenuHeader">产品筛选</div>
+            <div class="MenuList">
+                <div class="MenuListHeader">手机通讯</div>
+                <ul class=" MenuListTextL shanxuanLeftMenu">
+                    <li><a href="filter.html">手机</a></li>
+                    <li><a href="filter.html">对讲机</a></li>
+                </ul>
+            </div>
+            <div class="MenuList">
+                <div class="MenuListHeader">运营商</div>
+                <ul class=" MenuListTextL shanxuanLeftMenu">
+                    <li><a href="filter.html">购机送费</a></li>
+                    <li><a href="filter.html">"0"元购机</a></li>
+                    <li><a href="filter.html">选号入网</a></li>
+                </ul>
+            </div>
+            <div class="MenuList">
+                <div class="MenuListHeader">手机配件</div>
+                <ul class=" MenuListTextL shanxuanLeftMenu">
+                    <li><a href="filter.html">手机电池</a></li>
+                    <li><a href="filter.html">蓝牙耳机</a></li>
+                    <li><a href="filter.html">充电器/数据线</a></li>
+                    <li><a href="filter.html">手机耳机</a></li>
+                    <li><a href="filter.html">手机贴膜</a></li>
+                    <li><a href="filter.html">手机存储卡</a></li>
+                    <li><a href="filter.html">手机保护套</a></li>
+                    <li><a href="filter.html">车载配件</a></li>
+                    <li><a href="filter.html">iPhone</a></li>
+                    <li><a href="filter.html">配件</a></li>
+                </ul>
+            </div>
+            <img src="images/shangxuanleftmenu.png" alt=""/>
+        </div>
+        <div class="rightArea">
+            <div class="screeningBox">
+                <dl class="screenline clearfix">
+                    <dt>手机</dt>
+                    <dd class="screenList screenList1">
+                        <ul class="clearfix">
+                            <li><a href="#">裸机(773)</a></li>
+                            <li><a href="#">合约机(192)</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="screenline clearfix">
+                    <dt>品牌</dt>
+                    <dd class="limit"><a href="#" class="active">不限</a></dd>
+                    <dd class="screenList screenList2">
+                        <ul class="clearfix">
+                            <li><a href="#">qiku/奇酷</a></li>
+                            <li><a href="#">Apple/苹果</a></li>
+                            <li><a href="#">Samsung/三星</a></li>
+                            <li><a href="#">华为荣耀</a></li>
+                            <li><a href="#">Miui/小米</a></li>
+                            <li><a href="#">Huawe华为</a></li>
+                            <li><a href="#">Meizu/魅族</a></li>
+                            <li><a href="#">Nubia/努比亚</a></li>
+                            <li><a href="#">Letv/乐视</a></li>
+                            <li><a href="#">Lenovo/联想</a></li>
+                            <li><a href="#">Oppo/欧珀</a></li>
+                            <li><a href="#">Motorola/摩托罗拉</a></li>
+                        </ul>
+                    </dd>
+                    <dd class="screenmore"><a href="javascript:;">更多&or;</a></dd>
+                </dl>
+                <dl class="screenline clearfix">
+                    <dt>屏幕尺寸</dt>
+                    <dd class="limit"><a href="#" class="active">不限</a></dd>
+                    <dd class="screenList screenList3">
+                        <ul class="clearfix">
+                            <li><a href="#">超大屏幕(≥5.9英寸)</a></li>
+                            <li><a href="#">大屏幕(4.8-5.8英寸)</a></li>
+                            <li><a href="#">主流屏幕尺寸(4.0-4.7英寸)</a></li>
+                            <li><a href="#">经典尺寸(3.4-3.9英寸)</a></li>
+                            <li><a href="#">小屏幕(≤3.3英寸)</a></li>
+                        </ul>
+                    </dd>
+                    <dd class="screenmore"><a href="javascript:;">更多&or;</a></dd>
+                </dl>
+                <dl class="screenline clearfix">
+                    <dt>操作系统</dt>
+                    <dd class="limit"><a href="#" class="active">不限</a></dd>
+                    <dd class="screenList screenList4">
+                        <ul class="clearfix">
+                            <li><a href="#">苹果iOS</a></li>
+                            <li><a href="#">Android</a></li>
+                            <li><a href="#">Windowsphone</a></li>
+                            <li><a href="#">Symbian</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="screenline clearfix">
+                    <dt>适用网络制式</dt>
+                    <dd class="limit"><a href="#" class="active">不限</a></dd>
+                    <dd class="screenList screenList5">
+                        <ul class="clearfix">
+                            <li><a href="#">移动4G(TD-LTE)</a></li>
+                            <li><a href="#">电信4G(FDD-LTE)</a></li>
+                            <li><a href="#">移动3G(TD-SCDMA)</a></li>
+                            <li><a href="#">移动3.5G(TD-HSDPA)</a></li>
+                            <li><a href="#">电信3G(CDMA2000)</a></li>
+                            <li><a href="#">联通3G(WCDMA)</a></li>
+                            <li><a href="#">联通2G/移动2G(GSM)</a></li>
+                        </ul>
+                    </dd>
+                    <dd class="screenmore"><a href="javascript:;">更多&or;</a></dd>
+                </dl>
+                <dl class="screenline clearfix">
+                    <dt>更多选项</dt>
+                    <dd class="screenList screenList6">
+                        <ul class="clearfix">
+                            <li><a href="#">CPU核心数&or;</a></li>
+                            <li><a href="#">主摄像头像素&or;</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <div class="hr_15"></div>
+            <div class="screenHeader">
+                <span class="fl">送至</span>
+                <div class="select">
+                    <span>北京市 海淀区 五环内</span><i></i>
+                    <ul class="showSelect">
+                        <li>北京市 海淀区 四环内</li>
+                        <li>北京市 海淀区 三环内</li>
+                        <li>北京市 海淀区 二环内</li>
+                    </ul>
+                </div>
+                <p class="fr">共<span>16422</span>件商品</p>
+                <label class="fr" for="youhuo" >仅显示有货</label>
+                <input id="youhuo" class="youhuo fr" type="checkbox">
+            </div>
+            <div class="filterArea clearfix ">
+                <div class="filterAearList">
+                    <div class="fl">
+                        <img src="images/3_1.gif" alt=""/>
+
+                        <div>
+                            <p><a href="#">小米 红米 3G (GSM/TD-SCDMA)手机 灰色</a></p>
+
+                            <p class="filterprice"><span class="price">&yen;1150</span><a href="#">4886</a>评论</p>
+
+                            <div class="addshopcar">
+                                <i></i>加入购物车
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filterAearList">
+                    <div class="fl">
+                        <img src="images/3_2.gif" alt=""/>
+
+                        <div>
+                            <p><a href="#">GHONG 国虹 V10 海豚 3G (GSM/TD-SCDMA)双卡双待 手机 白色</a></p>
+
+                            <p class="filterprice"><span class="price">&yen;539</span><a href="#">4389</a>评论</p>
+
+                            <div class="addshopcar">
+                                <i></i>加入购物车
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="filterAearList fl">
+                    <div class="fl">
+                        <img src="images/3_3.gif" alt=""/>
+
+                        <div>
+                            <p><a href="#">Apple 苹果 iphone 4 8G (GSM/WCDMA) 手机 白色</a></p>
+                            <p class="filterprice"><span class="price">&yen;2178</span><a href="#">8060</a>评论</p>
+
+                            <div class="addshopcar">
+                                <i></i>加入购物车
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="filterAearList fl">
+                    <div class="fl">
+                        <img src="images/3_4.gif" alt=""/>
+
+                        <div>
+                            <p><a href="#">Nokia 诺基亚 1050 GSM手机 黑色</a></p><br/>
+
+                            <p class="filterprice"><span class="price">&yen;169</span><a href="#">3222</a>评论</p>
+
+                            <div class="addshopcar">
+                                <i></i>加入购物车
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="filterAearList fl">
+                    <div class="fl">
+                        <img src="images/3_5.gif" alt=""/>
+
+                        <div>
+                            <p><a href="#">小米3 移动3G(GSM/TD-SCDMA)16G版 星空灰 手机</a></p>
+
+                            <p class="filterprice"><span class="price">&yen;2399</span><a href="#">3978</a>评论</p>
+
+                            <div class="addshopcar">
+                                <i></i>加入购物车
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                <div class="filterAearList">
+                    <div class="fl">
+                        <img src="images/3_6.png" alt=""/>
+
+                        <div>
+                            <p><a href="#">Nokia 诺基亚 1050 GSM手机 黑色</a></p><br/>
+
+                            <p class="filterprice"><span class="price">&yen;169</span><a href="#">2782</a>评论</p>
+
+                            <div class="addshopcar">
+                                <i></i>加入购物车
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="filterAearList fl">
+                    <div class="fl">
+                        <img src="images/3_4.gif" alt=""/>
+
+                        <div>
+                            <p><a href="#">Nokia 诺基亚 1050 GSM手机 黑色</a></p><br/>
+
+                            <p class="filterprice"><span class="price">&yen;169</span><a href="#">3222</a>评论</p>
+
+                            <div class="addshopcar">
+                                <i></i>加入购物车
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="filterAearList fl">
+                    <div class="fl">
+                        <img src="images/3_5.gif" alt=""/>
+
+                        <div>
+                            <p><a href="#">小米3 移动3G(GSM/TD-SCDMA)16G版 星空灰 手机</a></p>
+
+                            <p class="filterprice"><span class="price">&yen;2399</span><a href="#">3978</a>评论</p>
+
+                            <div class="addshopcar">
+                                <i></i>加入购物车
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                <div class="filterAearList">
+                    <div class="fl">
+                        <img src="images/3_6.png" alt=""/>
+
+                        <div>
+                            <p><a href="#">Nokia 诺基亚 1050 GSM手机 黑色</a></p><br/>
+
+                            <p class="filterprice"><span class="price">&yen;169</span><a href="#">2782</a>评论</p>
+
+                            <div class="addshopcar">
+                                <i></i>加入购物车
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="filterAearList fl">
+                    <div class="fl">
+                        <img src="images/3_4.gif" alt=""/>
+
+                        <div>
+                            <p><a href="#">Nokia 诺基亚 1050 GSM手机 黑色</a></p><br/>
+
+                            <p class="filterprice"><span class="price">&yen;169</span><a href="#">3222</a>评论</p>
+
+                            <div class="addshopcar">
+                                <i></i>加入购物车
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="filterAearList fl">
+                    <div class="fl">
+                        <img src="images/3_5.gif" alt=""/>
+
+                        <div>
+                            <p><a href="#">小米3 移动3G(GSM/TD-SCDMA)16G版 星空灰 手机</a></p>
+
+                            <p class="filterprice"><span class="price">&yen;2399</span><a href="#">3978</a>评论</p>
+
+                            <div class="addshopcar">
+                                <i></i>加入购物车
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                <div class="filterAearList">
+                    <div class="fl">
+                        <img src="images/3_6.png" alt=""/>
+
+                        <div>
+                            <p><a href="#">Nokia 诺基亚 1050 GSM手机 黑色</a></p><br/>
+
+                            <p class="filterprice"><span class="price">&yen;169</span><a href="#">2782</a>评论</p>
+
+                            <div class="addshopcar">
+                                <i></i>加入购物车
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="filterAearList fl">
+                    <div class="fl">
+                        <img src="images/3_4.gif" alt=""/>
+
+                        <div>
+                            <p><a href="#">Nokia 诺基亚 1050 GSM手机 黑色</a></p><br/>
+
+                            <p class="filterprice"><span class="price">&yen;169</span><a href="#">3222</a>评论</p>
+
+                            <div class="addshopcar">
+                                <i></i>加入购物车
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="filterAearList fl">
+                    <div class="fl">
+                        <img src="images/3_5.gif" alt=""/>
+
+                        <div>
+                            <p><a href="#">小米3 移动3G(GSM/TD-SCDMA)16G版 星空灰 手机</a></p>
+
+                            <p class="filterprice"><span class="price">&yen;2399</span><a href="#">3978</a>评论</p>
+
+                            <div class="addshopcar">
+                                <i></i>加入购物车
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                <div class="filterAearList">
+                    <div class="fl">
+                        <img src="images/3_6.png" alt=""/>
+
+                        <div>
+                            <p><a href="#">Nokia 诺基亚 1050 GSM手机 黑色</a></p><br/>
+
+                            <p class="filterprice"><span class="price">&yen;169</span><a href="#">2782</a>评论</p>
+
+                            <div class="addshopcar">
+                                <i></i>加入购物车
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="page-icon">
+                <a href="#" class="page-prev">上一页</a>
+                <a href="#" class="page-current">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <span class="ellipsis">... </span>
+                <a href="#">200</a>
+                <a class="page-next" href="#">下一页</a>
+                <span>共200页，到第</span>
+                <input type="text" class="page-text" value="1">
+                <span>页</span>
+                <input type="button" value="确定" class="page-button">
+            </div>
+</div>
+</div>
+<footer>
+    <div class="footlink">
+        <ul>
+            <li><a href="javascript:;">慕课简介</a></li>
+            <li><a href="javascript:;">慕课公告</a></li>
+            <li><a href="javascript:;">招纳贤士</a></li>
+            <li><a href="javascript:;">联系我们</a></li>
+        </ul>
+        <p class="tel">客服热线：400-675-12344</p>
+    </div>
+    <div class="copyrighttext"> Copyright © 2006 - 2014慕课版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</div>
+    <div class="copyrightpic">
+        <ul>
+            <li><img src="images/copyright.png" alt=""/></li>
+            <li><img src="images/copyright.png" alt=""/></li>
+            <li><img src="images/copyright.png" alt=""/></li>
+            <li><img src="images/copyright.png" alt=""/></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
