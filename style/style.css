@@ -1493,6 +1493,17 @@ select{
 
 
 
+/*·µ»Ø¶¥²¿*/
+.to-top {
+    display: none;
+    padding: 0 20px;
+    color: #fff;
+    background-color:#005aa0;
+    height: 20px;
+}
+
+
+
 
 
 
