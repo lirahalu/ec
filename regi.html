@@ -11,6 +11,7 @@
     <![endif]-->
     <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery.validate-1.13.1.js"></script>
 </head>
 <body>
 <header>
@@ -25,22 +26,24 @@
 <div class="hr_10"></div>
 <div class="denglu regin">
     <div>
+        <form action="#" method="get">
     <div class="logintable clearfix">
+
         <dl>
             <dt><p><i>*</i>账户名：</p></dt>
-            <dd><input type="text" class="logintext1" placeholder="邮箱/用户名/手机号"/></dd>
+            <dd><input type="text" class="logintext1" name="username" placeholder="邮箱/用户名/手机号"/></dd>
         </dl>
         <dl>
             <dt><p><i>*</i>请设置密码：</p></dt>
-            <dd><input type="text"class="logintext2" /></dd>
+            <dd><input type="text"class="logintext2" name="password" /></dd>
         </dl>
         <dl>
             <dt><p><i>*</i>请确认密码：</p></dt>
-            <dd><input type="text" class="logintext2"/></dd>
+            <dd><input type="text" class="logintext2" name="confirm-password"/></dd>
         </dl>
         <dl>
             <dt><p><i>*</i>邮箱：</p></dt>
-            <dd><input type="text"class="logintext2"/></dd>
+            <dd><input type="text"class="logintext2" name="email"/></dd>
         </dl>
         <dl>
             <dt><p><i>*</i>地址：</p></dt>
@@ -50,8 +53,48 @@
         <div  class="xieyi">
     <input type="checkbox" checked="checked"/>我已阅读并同意 <a href="#">《用户注册协议》</a>
         </div>
-    <div class="loginbutton reginbutton">提 交</div>
+    <input type="submit" class="loginbutton reginbutton" value="提交">
+        </form>
     </div>
 </div>
+<script>
+    /*表单验证*/
+    $(document).ready(function () {
+        $("form").validate({
+            debug: true,
+            rules: {
+                username: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 10
+                },
+                password: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 16
+                }
+            },  messages: {
+                username: {
+                    required: "必须填写用户名",
+                    minlength: "用户名最小为2位",
+                    maxlength: "用户名最大为10位",
+                    rangelength: "用户名应该在2-10位",
+                    remote: "用户名不存在"
+                },
+                password: {
+                    required: "必须填写密码",
+                    minlength: "密码最小为2位",
+                    maxlength: "密码最大为16位"
+                },
+                "confirm-password": {
+                    equalTo: "两次输入的密码不一致"
+                }
+            },
+        });
+
+
+    });
+</script>
+
 </body>
 </html>

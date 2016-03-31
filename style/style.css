@@ -593,6 +593,15 @@ footer .tel {
 .screenList2 li{
     width: 25%;
 }
+.screenList{
+    height: 34px;
+    overflow: hidden;
+}
+.screenListauto{
+    height: auto;
+    overflow: visible;
+}
+
 .screenList1 li{
     margin-right: 108px;
 }
@@ -1405,7 +1414,7 @@ select{
 .denglu p{
     margin: 14px 0 6px 0;
 }
-.name,.logintext1{
+.username,.logintext1{
     background:url("../images/icon/77name.png") right center no-repeat;
 }
 .password,.logintext2{
@@ -1443,8 +1452,9 @@ select{
     line-height: 32px;
     text-align: center;
     border-radius: 2px;
-    margin-left: 750px;
+    left: 55%;
     font-size: 14px;
+    position: relative;
 }
 .logintable input[type="text"]{
     width: 268px;
@@ -1488,7 +1498,8 @@ select{
     color: #005aa0;
 }
 .reginbutton{
-    margin: 32px auto 0 auto;
+    margin-top: 32px;
+    margin-left: 100px;
 }
 
 

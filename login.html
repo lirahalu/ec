@@ -10,7 +10,8 @@
     <script type="text/javascript" src="js/ie6Fixpng.js"></script>
     <![endif]-->
     <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/jquery.validate-1.13.1.js"></script>
+
 </head>
 <body>
 <header>
@@ -24,33 +25,79 @@
 <div class="hr_10"></div>
 <div class="denglu">
     <div>
-        <p>邮箱/用户名/已验证手机</p>
-        <input type="text" id="name" class="name"/>
-        <p>密码</p>
-        <input type="text" id="password" class="password"/>
-        <div class="wangjimima">
-        <input type="checkbox" id="zidongdenglu"/>
-        <label for="zidongdenglu">自动登陆</label>
-        <input type="checkbox" id="safty"/>
-        <label for="zidongdenglu">安全控件登录</label>
-        <a href="javascript:;">忘记密码？</a>
-        </div>
-        <div class="loginbutton">登 录</div>
-        <p>使用合作网站帐号登录：</p>
-        <div>
-            <ul>
-                <li>QQ|</li>
-                <li>网易|</li>
-                <li>人人|</li>
-                <li>奇虎360|</li>
-                <li>开心|</li>
-                <li>豆瓣|</li>
-                <li>搜狐|</li>
-                <li>更多</li>
-            </ul>
-        </div>
+        <form action="#" method="get">
+                <p>邮箱/用户名/已验证手机</p>
+                <input type="text" id="username" name="username" class="username">
+
+                <p>密码</p>
+                <input type="text" id="password" name="password" class="password">
+
+                <div class="wangjimima">
+                    <input type="checkbox" id="zidongdenglu"/>
+                    <label for="zidongdenglu">自动登陆</label>
+                    <input type="checkbox" id="safty"/>
+                    <label for="safty">安全控件登录</label>
+                    <a href="javascript:;">忘记密码？</a>
+                </div>
+                <input class="loginbutton" type="submit" value="登录">
+        </form>
+                <p>使用合作网站帐号登录：</p>
+
+                <div>
+                    <ul>
+                        <li>QQ|</li>
+                        <li>网易|</li>
+                        <li>人人|</li>
+                        <li>奇虎360|</li>
+                        <li>开心|</li>
+                        <li>豆瓣|</li>
+                        <li>搜狐|</li>
+                        <li>更多</li>
+                    </ul>
+                </div>
+
     </div>
 </div>
 <div class="freesignin">免费注册&gt;&gt;</div>
+
+<script>
+    /*表单验证*/
+    $(document).ready(function () {
+        $("form").validate({
+            debug: true,
+            rules: {
+                username: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 10
+                },
+                password: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 16
+                }
+            },  messages: {
+                username: {
+                    required: "必须填写用户名",
+                    minlength: "用户名最小为2位",
+                    maxlength: "用户名最大为10位",
+                    rangelength: "用户名应该在2-10位",
+                    remote: "用户名不存在"
+                },
+                password: {
+                    required: "必须填写密码",
+                    minlength: "密码最小为2位",
+                    maxlength: "密码最大为16位"
+                },
+                "confirm-password": {
+                    equalTo: "两次输入的密码不一致"
+                }
+            },
+        });
+
+
+    });
+</script>
+
 </body>
 </html>

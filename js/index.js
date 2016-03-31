@@ -96,10 +96,8 @@ $(function () {
 
 /*一级子菜单滑出*/
 $(function(){
-    $(".shopClass h3").toggle(function(){
-        $(".shopClassShow").slideDown();
-    },function(){
-        $(".shopClassShow").slideUp();
+    $(".shopClass h3").click(function(){
+        $(".shopClassShow").slideToggle();
     });
 });
 
@@ -206,11 +204,8 @@ $(function(){
 
 
 $(function(){
-   $(".select").toggle(function(){
-      $(".showSelect").show();
-   },
-       function(){
-       $(".showSelect").hide();
+   $(".select").click(function(){
+      $(".showSelect").toggle();
    });
 });
 
@@ -308,8 +303,95 @@ $(function(){
 
 /*返回顶部*/
 $(function() {
-    $('.to-top').toTop();
+    $(".to-top").toTop();
 });
+
+
+
+
+/*筛选页功能实现*/
+
+$(function(){
+    var $a=$(".screenList1 a");
+    $a.each(function (){
+        $(this).click(function () {
+            $this=$(this);
+            $a.removeClass();
+            $this.addClass("active");
+            $this.parent().parent().parent().siblings().find("a").removeClass();
+        })
+    });
+});
+
+$(function(){
+    var $a=$(".screenList3 a");
+    $a.each(function (){
+        $(this).click(function () {
+            $this=$(this);
+            $a.removeClass();
+            $this.addClass("active");
+            $this.parent().parent().parent().siblings().find("a").removeClass();
+        })
+    });
+});
+$(function(){
+    var $a=$(".screenList2 a");
+    $a.each(function (){
+        $(this).click(function () {
+            $this=$(this);
+            $a.removeClass();
+            $this.addClass("active");
+            $this.parent().parent().parent().siblings().find("a").removeClass();
+        })
+    });
+});$(function(){
+    var $a=$(".screenList4 a");
+    $a.each(function (){
+        $(this).click(function () {
+            $this=$(this);
+            $a.removeClass();
+            $this.addClass("active");
+            $this.parent().parent().parent().siblings().find("a").removeClass();
+        })
+    });
+});
+$(function(){
+    var $a=$(".screenList5 a");
+    $a.each(function (){
+        $(this).click(function () {
+            $this=$(this);
+            $a.removeClass();
+            $this.addClass("active");
+            $this.parent().parent().parent().siblings().find("a").removeClass();
+        })
+    });
+});
+
+
+$(function(){
+    var $more=$(".screenmore");
+    $more.each(function () {
+       $(this).click(function(){
+           $(this).siblings().has("li").toggleClass("screenListauto");
+       });
+    });
+});
+
+$(function () {
+    var limit=$(".limit a");
+    limit.each(function () {
+        $(this).click(function(){
+            $this=$(this);
+            $this.parent().siblings().find("li").find("a").removeClass();
+            $this.addClass("active");
+        });
+    });
+});
+
+
+
+
+
 
 
 
