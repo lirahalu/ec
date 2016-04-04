@@ -1402,7 +1402,7 @@ select{
 .denglu p,ul{
     color: #999999;
 }
-.denglu input[type="text"]{
+.denglu .username,.denglu .password{
     width: 306px;
     height: 32px;
     border: 1px solid #cccccc;
@@ -1456,14 +1456,13 @@ select{
     font-size: 14px;
     position: relative;
 }
-.logintable input[type="text"]{
-    width: 268px;
-}
 .logintable dt{
     float: left;
     width: 100px;
     text-align: right;
     padding-right: 14px;
+    position: relative;
+    top: -6px;
 }
 .logintable dd{
     float: left;
@@ -1484,9 +1483,10 @@ select{
     top:6px;
 }
 .logintable input{
-    position: relative;
-    top: 6px;
+    height: 32px;
+    width: 268px;
     text-indent: 6px;
+    border: 1px solid #cccccc;
 }
 .xieyi{
     padding: 34px 0 0 100px;

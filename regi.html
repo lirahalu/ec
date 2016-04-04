@@ -9,8 +9,7 @@
     <script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
     <script type="text/javascript" src="js/ie6Fixpng.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.validate-1.13.1.js"></script>
 </head>
 <body>
@@ -35,19 +34,19 @@
         </dl>
         <dl>
             <dt><p><i>*</i>请设置密码：</p></dt>
-            <dd><input type="text"class="logintext2" name="password" /></dd>
+            <dd><input type="password" class="logintext2" name="password" id="password"/></dd>
         </dl>
         <dl>
             <dt><p><i>*</i>请确认密码：</p></dt>
-            <dd><input type="text" class="logintext2" name="confirm-password"/></dd>
+            <dd><input type="password" class="logintext2" name="confirm-password"/></dd>
         </dl>
         <dl>
             <dt><p><i>*</i>邮箱：</p></dt>
-            <dd><input type="text"class="logintext2" name="email"/></dd>
+            <dd><input type="text" class="logintext2" name="email"/></dd>
         </dl>
         <dl>
             <dt><p><i>*</i>地址：</p></dt>
-            <dd><input type="text" /></dd>
+            <dd><input type="text" name="address" /></dd>
         </dl>
     </div>
         <div  class="xieyi">
@@ -72,8 +71,19 @@
                     required: true,
                     minlength: 2,
                     maxlength: 16
+                },
+                "confirm-password": {
+                    equalTo: "#password"
+                },
+                email:{
+                    required:true,
+                    email:true
+                },
+                address:{
+                    required:true
                 }
-            },  messages: {
+            },
+            messages: {
                 username: {
                     required: "必须填写用户名",
                     minlength: "用户名最小为2位",
@@ -88,11 +98,16 @@
                 },
                 "confirm-password": {
                     equalTo: "两次输入的密码不一致"
+                },
+                email:{
+                    required: "必须填写邮箱",
+                    email:"邮箱格式不正确"
+                },
+                address:{
+                    required: "必须填写地址"
                 }
-            },
+            }
         });
-
-
     });
 </script>
 

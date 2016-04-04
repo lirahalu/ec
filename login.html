@@ -9,8 +9,8 @@
     <script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
     <script type="text/javascript" src="js/ie6Fixpng.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
-    <script src="js/jquery.validate-1.13.1.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript"  src="js/jquery.validate-1.13.1.js"></script>
 
 </head>
 <body>
@@ -60,23 +60,27 @@
 </div>
 <div class="freesignin">免费注册&gt;&gt;</div>
 
+
 <script>
-    /*表单验证*/
     $(document).ready(function () {
-        $("form").validate({
-            debug: true,
+        validator = $("form").validate({  debug: true,
+
             rules: {
                 username: {
                     required: true,
                     minlength: 2,
-                    maxlength: 10
+                    maxlength: 16
                 },
                 password: {
                     required: true,
                     minlength: 2,
                     maxlength: 16
+                },
+                "confirm-password": {
+                    equalTo: "#password"
                 }
-            },  messages: {
+            },
+            messages: {
                 username: {
                     required: "必须填写用户名",
                     minlength: "用户名最小为2位",
@@ -92,12 +96,12 @@
                 "confirm-password": {
                     equalTo: "两次输入的密码不一致"
                 }
-            },
-        });
-
-
+            }
+        })
     });
+
 </script>
+
 
 </body>
 </html>
